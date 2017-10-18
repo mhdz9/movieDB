@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: 1
+  title: MyString
+  genre: MyString
+  year: 1
+  rating: MyString
+  country: MyString
+  language: MyString
+  actor: MyString
+  director: MyString
+  award: MyString
+  review: MyString
+
+two:
+  uid: 1
+  title: MyString
+  genre: MyString
+  year: 1
+  rating: MyString
+  country: MyString
+  language: MyString
+  actor: MyString
+  director: MyString
+  award: MyString
+  review: MyString

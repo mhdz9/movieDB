@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MovieDB</title>
+    <%= csrf_meta_tags %>
+
+    <!-- Bootstrap links -->
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!--<ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+        <li>
+          <a href="<%= destroy_user_session_path %>" data-method='delete'>Sign out</a>
+        </li>
+      <% end %>
+    </ul>-->
+   <!--<div id="notify">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+    <div id="user-info">
+      <% if user_signed_in? %>
+        <%#= current_user.name %>
+        [<%= link_to 'Sign out', destroy_user_session_path, method: :delete  %>]
+      <% end %>
+    </div>-->
+    <%= yield %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

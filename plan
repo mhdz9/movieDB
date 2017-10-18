@@ -1,0 +1,29 @@
+gem 'devise', '~> 4.3'
+gem 'omniauth', '~> 1.7', '>= 1.7.1'
+gem 'omniauth-facebook', '~> 4.0'
+gem 'paperclip', '~> 5.1'
+gem 'chartkick', '~> 2.2', '>= 2.2.4'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+
+
+<%= f.input :comment, :input_html => { :wrap => :soft, :rows => 2}, :label => 'Type in box below:', wrapper_html: { class:  'type' } %>
+
+          <%= f.label :email, wrapper_html: { class: 'sr-only'} %><br />
+          <%= f.email_field :email, autofocus: true %>
+
+
+movie attributes
+
+id - integer
+title - string
+genre - string
+year - integer
+rating - string
+country - string
+language - string
+actor - string
+director - string
+award - string
+review - text
+
+rails g model Movie uid:integer title:string genre:string year:integer rating:string country:string language:string actor:string director:string award:string review:string

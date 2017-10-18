@@ -1,0 +1,59 @@
+<!--<h1>Welcome#home</h1>
+<p>Find me in app/views/welcome/home.html.erb</p>-->
+
+<!-- Custom styles for this template -->
+<link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#">movieDB</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="">Link<span class="sr-only">(current)</span></a>
+				</li>
+				<% if user_signed_in? %>
+					<li class="nav-item">
+						<a class="nav-link" href="<%= destroy_user_session_path %>" data-method='delete'>Sign out</a>
+					</li>
+				<% end %>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+	          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+	          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	        </form>
+      	</div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Bienvenido a movieDB</h1>
+        <p>En este sitio podras crear tu coleccion de peliculas, con diversas categorias como genero, ano, titulo, clasificacion por edades, pais, actor, idioma, director, entre otras!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Ver mas &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col col-md-4">
+    			<h2>Generar vistas</h2>
+    			<p>Aqui podras generar la vista o lista que desees en base a los filtros que elijas.</p>
+    			<p><a class="btn btn-primary btn-lg" href="#">Ver mas &raquo;</a></p>
+    		</div>
+    		<div class="col col-md-4">
+    			<h2>Generar charts</h2>
+    			<p>Puedes generar charts que te ayuden a identificar mejor tus generos favoritos!</p>
+    			<p><a class="btn btn-primary btn-lg" href="#">Ver mas &raquo;</a></p>
+    		</div>
+    		<div class="col col-md-4">
+    			<h2>Exportar lista</h2>
+    			<p>Exporta cuantos reportes necesites de tu coleccion de peliculas.</p>
+    			<p><a class="btn btn-primary btn-lg" href="#">Ver mas &raquo;</a></p>
+    		</div>
+    	</div>
+    </div>
+</body>
